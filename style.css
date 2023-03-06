@@ -1,0 +1,188 @@
+body {
+  background-color: #E5E4E2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Container */
+
+.container {
+  height: 760px;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* Form */
+
+.todo--btn {
+  background: #478778;
+  font-size: 2rem;
+  height: 90px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+
+
+}
+
+
+.filter--btn,
+.todo--btn {
+  border: none;
+  color: white;
+
+  text-align: center;
+  width: 90px;
+}
+
+.filter--container {
+  position: absolute;
+  right: -90px;
+  top: 0;
+}
+
+.filter--btn {
+  background-color: #5F8575;
+  padding: 5px;
+
+}
+
+.filter--options {
+  background-color: white;
+  font-size: .75rem;
+  padding: 2.5px;
+  position: absolute;
+  text-align: center;
+  width: 85px;
+}
+
+.option:hover {
+  color: purple;
+}
+
+.filter--btn:hover {
+  background-color: #3e564c
+}
+
+.todo--btn:hover {
+  background-color: #2e584e
+}
+
+.todo--field {
+  background-color: #232323;
+  border: none;
+  color: mintcream;
+  padding: 20px;
+  width: 844px;
+}
+
+.todo--field,
+.task--field {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.todo--field,
+.task {
+  font-size: 1.3rem;
+  height: 50px;
+}
+
+.todo--field:focus,
+.task--field:focus {
+  outline-width: 0;
+}
+
+/* Tasks */
+
+
+.task--check {
+  border-radius: 10px;
+  height: 14px;
+  margin: 10px 20px 0;
+  width: 14px;
+}
+
+.task--edit {
+  height: 20px;
+  margin: -20px 20px 20px 890px;
+  /* margin-left: 890px; */
+  width: 20px;
+}
+
+.task--field {
+  border: none;
+  font-size: 1.3rem;
+  width: 710px;
+}
+
+.task {
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 27px 0 13px 0;
+  width: 942px;
+}
+
+.task--btn-container {
+  margin-top: -70px;
+  margin-left: 785px;
+}
+
+.task--btn {
+  background-color: #E5E4E2;
+  border: solid 1px black;
+  border-radius: 10px;
+  color: #232323;
+  font-size: .80rem;
+  height: 17px;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 60px;
+}
+
+.task--btn:hover {
+  background-color: #bab7b2;
+}
+
+/* Modal */
+
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 10;
+}
+
+.modal--btn {
+  margin: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+
+/* Effects */
+.inactive {
+  opacity: .5;
+}
+
+.hidden {
+  display: none;
+}
